@@ -1,4 +1,4 @@
 output "barnone_service_url" {
   description = "API backend URL"
-  value       = aws_lambda_function_url.get_menu_items_url.function_url
+  value       = azurerm_linux_web_app.barnone_web_app.default_hostname
 }
